@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  list-style: none; }
+
+section.main-sec {
+  width: 100%;
+  height: 100vh;
+  background: #ddd; }
+  section.main-sec nav.top-nav {
+    width: 100%;
+    height: 10vh;
+    background: #34ace0;
+    color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 1fr 8fr; }
+    section.main-sec nav.top-nav div.icon {
+      width: 100%;
+      display: grid;
+      justify-content: center;
+      align-content: center; }
+      section.main-sec nav.top-nav div.icon h1 {
+        letter-spacing: 1.3px;
+        font-size: 1.8rem; }
+    section.main-sec nav.top-nav div.menu {
+      display: grid;
+      justify-content: end;
+      width: 95%; }
+      section.main-sec nav.top-nav div.menu ul {
+        display: grid;
+        grid-gap: 50px;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center; }
+        section.main-sec nav.top-nav div.menu ul li {
+          font-weight: 700;
+          letter-spacing: 1.2px; }
+  section.main-sec div.front-main {
+    background-color: #ddd;
+    height: 90vh;
+    display: grid;
+    justify-items: center;
+    align-items: center; }
+    section.main-sec div.front-main div.center-box {
+      width: 40%;
+      height: 40vh;
+      background: #34ace0;
+      border: 9px solid #f4f4f4;
+      box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.2);
+      position: relative; }
+      section.main-sec div.front-main div.center-box h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #f4f4f4;
+        font-size: 1.9rem;
+        letter-spacing: 1.2px;
+        line-height: 1.5; }
+
+section.main-two,
+section.main-three {
+  width: 100%;
+  height: 100vh;
+  background: #34ace0;
+  display: grid;
+  justify-items: center;
+  align-items: center; }
+  section.main-two .main-box,
+  section.main-three .main-box {
+    width: 80%;
+    height: 80vh;
+    background: teal;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr; }
+    section.main-two .main-box .left-main,
+    section.main-three .main-box .left-main {
+      background: #ff3f34;
+      display: grid;
+      padding: 60px;
+      color: #f4f4f4; }
+      section.main-two .main-box .left-main h1,
+      section.main-three .main-box .left-main h1 {
+        font-size: 2.2rem;
+        width: 50%;
+        text-transform: capitalize; }
+      section.main-two .main-box .left-main p,
+      section.main-three .main-box .left-main p {
+        line-height: 1.4; }
+      section.main-two .main-box .left-main a,
+      section.main-three .main-box .left-main a {
+        width: 30%;
+        height: 10%;
+        text-decoration-style: solid;
+        text-decoration-line: underline; }
+    section.main-two .main-box .right-main,
+    section.main-three .main-box .right-main {
+      background: url(../img/road.jpeg);
+      background-size: cover;
+      background-position: center; }
+
+section.main-three .main-box .left-main {
+  background: #0be881; }
+
+section.main-three .main-box .right-main {
+  background: url(../img/ocean.jpeg);
+  background-size: cover;
+  background-position: center; }
+
+section.contact {
+  padding-top: 70px;
+  width: 100%;
+  height: 70vh;
+  background: #05c46b;
+  color: #f4f4f4;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr; }
+  section.contact .icon {
+    display: grid;
+    justify-items: center;
+    align-items: center; }
+    section.contact .icon .fa-cube {
+      color: #fff;
+      font-size: 8rem;
+      border: 10px solid #f4f4f4;
+      padding: 60px; }
+  section.contact .connect,
+  section.contact .interact {
+    width: 80%; }
+    section.contact .connect h1,
+    section.contact .interact h1 {
+      margin-bottom: 20px;
+      font-size: 2rem; }
+    section.contact .connect p,
+    section.contact .interact p {
+      margin-bottom: 20px;
+      line-height: 1.4; }
+    section.contact .connect .socials .fa-facebook,
+    section.contact .interact .socials .fa-facebook {
+      margin-right: 5%;
+      font-size: 2.1rem; }
+    section.contact .connect .socials .fa-twitter-square,
+    section.contact .interact .socials .fa-twitter-square {
+      margin-right: 5%;
+      font-size: 2.1rem; }
+    section.contact .connect .socials .fa-envelope,
+    section.contact .interact .socials .fa-envelope {
+      flex: 1;
+      font-size: 2.1rem; }
+  section.contact .interact input {
+    height: 30px;
+    outline: none; }
+  section.contact .interact button {
+    height: 33px;
+    outline: none;
+    border: none;
+    background: #ff3f34;
+    width: 30%;
+    font-family: inherit;
+    color: inherit;
+    font-weight: 700;
+    margin-left: -5px; }
